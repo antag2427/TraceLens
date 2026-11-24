@@ -1,0 +1,4 @@
+timestamp,severity,service,message,trace_id,request_id,host
+2025-03-18T10:00:00Z,INFO,api-gateway,Request accepted,trace-421,req-421,gateway-1
+2025-03-18T10:00:01Z,WARN,payment,Payment provider response delayed,trace-421,req-421,payment-1
+2025-03-18T10:00:03Z,ERR,payment,Payment provider timed out,trace-421,req-421,payment-1

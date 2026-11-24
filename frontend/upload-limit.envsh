@@ -1,0 +1,4 @@
+#!/bin/sh
+# Allow one MiB of multipart framing beyond the file size enforced by FastAPI.
+file_limit=${TRACELENS_MAX_UPLOAD_BYTES:-26214400}
+export TRACELENS_REQUEST_BODY_BYTES="$((file_limit + 1048576))"
